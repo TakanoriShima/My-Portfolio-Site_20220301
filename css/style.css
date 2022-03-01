@@ -131,6 +131,11 @@ header {
     list-style-type: none;
   }
   
+  .pc-gnav li ul {
+      flex-direction: column !important;
+      height: 0;
+  }
+  
   .pc-gnav a {
     display: inline-block;
     padding: 20px 25px;
@@ -148,9 +153,9 @@ header {
 /*---pc版ドロップダウンメニュー---*/
 
 .pc-gnav li li {
-  height: 0;
-  overflow: hidden;
-  transition: 3s;
+    height: 60px;
+    overflow: hidden;
+    transition: 3s;
 }
 
 .pc-gnav li:hover > ul > li{
